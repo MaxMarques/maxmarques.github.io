@@ -1,4 +1,4 @@
-name: Deploy Portfolio to Github Pages
+name: Deploy Astro Site
 
 on:
   push:
@@ -13,10 +13,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up pnpm
-        uses: pnpm/action-setup@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          version: 8
+          node-version: '18'
 
       - name: Install dependencies
         run: pnpm install
@@ -28,4 +28,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./dist
