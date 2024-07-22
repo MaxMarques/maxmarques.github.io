@@ -1,0 +1,74 @@
+---
+import { getCollection } from "astro:content"
+import PageLayout from "@layouts/PageLayout.astro"
+import TopLayout from "@layouts/TopLayout.astro"
+import BottomLayout from "@layouts/BottomLayout.astro"
+import StackCard from "@components/StackCard.astro"
+import { EDUCATION } from "@consts"
+
+const collection = await getCollection("education")
+
+collection.sort((a, b) => new Date(b.data.dateStart).getTime() - new Date(a.data.dateStart).getTime())
+
+const education = await Promise.all(
+  collection.map(async (item) => {
+    const { Content } = await item.render()
+    return { ...item, Content }
+  })
+)
+
+function formatEducationDate(input: Date | string) {
+  if (typeof input === "string") return input
+
+  const month = input.toLocaleDateString("en-US", {
+    month: "short",
+  })
+
+  const year = new Date(input).getFullYear()
+  return `${month} ${year}`
+}
+---
+
+<PageLayout title={EDUCATION.TITLE} description={EDUCATION.DESCRIPTION}>
+  <TopLayout>
+    <div class="animate page-heading">
+      {EDUCATION.TITLE}
+    </div>
+  </TopLayout>
+  <BottomLayout>
+    <ul>
+      { 
+        education.map((entry) => (
+          <li class="animate border-b border-black/10 dark:border-white/25 mt-4 py-8 first-of-type:mt-0 first-of-type:pt-0 last-of-type:border-none">
+            <div class="text-sm uppercase mb-4">
+              {formatEducationDate(entry.data.dateStart)} - {formatEducationDate(entry.data.dateEnd)}
+            </div>
+            <div class="text-black dark:text-white font-semibold">
+              <a href={entry.data.url} target="_blank" class="flex items-center hover:underline">
+                {entry.data.company}
+
+                <img src={`/icon/${entry.data.logo}`} alt="icon" height={20} width={20} class="ml-2 mb-1" />
+              </a>
+            </div>
+            <div class="text-sm font-semibold">
+              {entry.data.role}
+            </div>
+            <article class="prose dark:prose-invert mt-5">
+              <entry.Content />
+            </article>
+            <div class="flex flex-wrap items-center gap-2">
+              {entry.data.tags && Array.isArray(entry.data.tags) && entry.data.tags.map((item: { text: string; icon: string; href: string; isActive: boolean }) => (
+                <StackCard 
+                  text={item.text}
+                  icon={item.icon}
+                  href={item.href}
+                  isActive={item.isActive}
+                />
+              ))}
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </BottomLayout>
+</PageLayout>

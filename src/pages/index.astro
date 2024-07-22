@@ -1,0 +1,393 @@
+---
+import { getCollection } from "astro:content"
+import PageLayout from "@layouts/PageLayout.astro"
+import ArrowCard from "@components/ArrowCard"
+import StackCard from "@components/StackCard.astro"
+import { SITE, SOCIALS } from "@consts"
+import TwinklingStars from "@components/TwinklingStars.astro"
+import MeteorShower from "@components/MeteorShower.astro"
+
+const projects = (await getCollection("projects"))
+  .filter(project => !project.data.draft)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0,3)
+
+const stack = [
+  { 
+    text: "Arduino", 
+    icon: "arduino.png", 
+    href: "https://www.arduino.cc",
+    isActive: true
+  },
+  { 
+    text: "C", 
+    icon: "c-original.svg", 
+    href: "https://www.w3schools.com/c/c_intro.php",
+    isActive: true
+  },
+  { 
+    text: "C++", 
+    icon: "cplusplus-original.svg", 
+    href: "https://www.w3schools.com/cpp/cpp_intro.asp",
+    isActive: true
+  },
+  { 
+    text: "Python", 
+    icon: "python-original.svg",
+    href: "https://www.python.org/about",
+    isActive: true
+  },
+  { 
+    text: "C#", 
+    icon: "cSharp.svg", 
+    href: "https://www.w3schools.com/cs/cs_intro.php",
+    isActive: true
+  },
+  { 
+    text: "Assembly", 
+    icon: "asm.png", 
+    href: "https://www.tutorialspoint.com/assembly_programming/assembly_introduction.htm",
+    isActive: true
+  },
+  { 
+    text: "Haskell", 
+    icon: "haskell-original.svg", 
+    href: "https://www.haskell.org",
+    isActive: true
+  },
+  { 
+    text: "R", 
+    icon: "r.png", 
+    href: "https://www.w3schools.com/r/r_intro.asp",
+    isActive: true
+  },
+  { 
+    text: "Swift", 
+    icon: "swift-original.svg", 
+    href: "https://developer.apple.com/swift",
+    isActive: true
+  },
+  { 
+    text: "SwiftUI", 
+    icon: "swift-original.svg", 
+    href: "https://developer.apple.com/xcode/swiftui",
+    isActive: true
+  },
+  { 
+    text: "React-Native", 
+    icon: "react-original.svg", 
+    href: "https://reactnative.dev",
+    isActive: true
+  },
+  { 
+    text: "Angular", 
+    icon: "angular-original.svg", 
+    href: "https://angular.dev",
+    isActive: true
+  },
+  { 
+    text: "AngularJS", 
+    icon: "angularjs-original.svg", 
+    href: "https://www.w3schools.com/angular/angular_intro.asp",
+    isActive: true
+  },
+  { 
+    text: "VueJS", 
+    icon: "vuejs-original.svg", 
+    href: "https://vuejs.org",
+    isActive: true
+  },
+  { 
+    text: "ReactJS", 
+    icon: "react-original.svg", 
+    href: "https://react.dev",
+    isActive: true
+  },
+  {
+    text: "Astro", 
+    icon: "astro.png", 
+    href: "https://astro.build",
+    isActive: true
+  },
+  { 
+    text: "NodeJS", 
+    icon: "nodejs-original.svg", 
+    href: "https://nodejs.org",
+    isActive: true
+  },
+  { 
+    text: "Xcode", 
+    icon: "xcode-original.svg", 
+    href: "https://developer.apple.com/xcode",
+    isActive: true
+  },
+  { 
+    text: "Docker", 
+    icon: "docker-original.svg", 
+    href: "https://www.docker.com",
+    isActive: true
+  },
+  { 
+    text: "Postman", 
+    icon: "postman-original.svg", 
+    href: "https://www.postman.com",
+    isActive: true
+  },
+  { 
+    text: "MongoDB", 
+    icon: "mongodb-original.svg", 
+    href: "https://www.mongodb.com",
+    isActive: true
+  },
+  {
+    text: "Alteryx", 
+    icon: "alteryx.jpeg", 
+    href: "https://www.alteryx.com",
+    isActive: true
+  },
+  { 
+    text: "Git", 
+    icon: "git-original.svg", 
+    href: "https://git-scm.com",
+    isActive: true
+  },
+  { 
+    text: "GitKraken", 
+    icon: "gitkraken.jpeg", 
+    href: "https://www.gitkraken.com",
+    isActive: true
+  },
+  { 
+    text: "MacOS", 
+    icon: "macOS.png", 
+    href: "",
+    isActive: false
+  },
+  { 
+    text: "Linux", 
+    icon: "linux-original.svg", 
+    href: "",
+    isActive: false
+  },
+]
+
+const languages = [
+  { 
+    text: "English (fluent)", 
+    icon: "united-states.png", 
+    href: "",
+    isActive: false
+  },
+  { 
+    text: "French (native)", 
+    icon: "france.png", 
+    href: "",
+    isActive: false
+  }
+]
+
+const hobbies = [
+  { 
+    text: "Travel", 
+    icon: "travel.png", 
+    href: "",
+    isActive: false
+  },
+  { 
+    text: "Motorsport", 
+    icon: "f1.png", 
+    href: "",
+    isActive: false
+  },
+  { 
+    text: "Guitar", 
+    icon: "guitar.png", 
+    href: "",
+    isActive: false
+  },
+  { 
+    text: "Cooking", 
+    icon: "cooking.png", 
+    href: "",
+    isActive: false
+  }
+]
+---
+
+<PageLayout title="Home" description={SITE.DESCRIPTION}>
+
+  <!-- Light Mode: Particles -->
+  <div class='absolute inset-0 block dark:hidden'>
+    <div id='particles1' class='fixed inset-0'></div>
+    <div id='particles2' class='fixed inset-0'></div>
+    <div id='particles3' class='fixed inset-0'></div>
+  </div>
+
+  <!-- Dark Theme: Stars -->
+  <div class='absolute inset-0 bg-black hidden dark:block'>
+    <div id='stars1' class='fixed inset-0'></div>
+    <div id='stars2' class='fixed inset-0'></div>
+    <div id='stars3' class='fixed inset-0'></div>
+  </div>
+
+  <!-- Dark Theme: Twinkling Stars / Metors -->
+  <div id="galaxy" class="fixed inset-0">
+    <div class="hidden dark:block">
+      <TwinklingStars/>
+      <MeteorShower/>
+    </div>
+  </div>
+
+  <script is:inline src="/js/bg.js"></script>
+  
+  <!-- HERO -->
+  <section class="relative h-screen w-full">
+    <div id="planetcont" class='animate absolute inset-0 top-1/4 overflow-hidden'>
+      <div id="crescent" class='absolute top-0 left-1/2 -translate-x-1/2 w-[250vw] min-h-[100vh] aspect-square rounded-full p-[1px] bg-gradient-to-b from-black/25 dark:from-white/75 from-0% to-transparent to-5%'>
+        <div id="planet" class='w-full h-full bg-white dark:bg-black rounded-full p-[1px] overflow-hidden flex justify-center'>
+          <div id="blur" class='w-full h-20 rounded-full bg-neutral-900/25 dark:bg-white/25 blur-3xl'/>
+        </div>
+      </div>
+    </div>
+    <div class="animate absolute h-full w-full flex items-center justify-center">
+      <div class='relative w-full h-full flex items-center justify-center'>
+        <div class='p-5 text-center'>
+          <p class='animated text-lg md:text-xl lg:text-2xl font-semibold opacity-75'>
+            Hello, I am Maxence
+          </p>
+          <p class='animated text-2xl md:text-3xl lg:text-4xl font-bold uppercase text-black dark:text-white'>
+            Software Engineer
+          </p>
+          <p class='animated text-sm md:text-base lg:text-lg opacity-75'>
+            Currently working as a freelancer for 6 months in order to validate my master's degree in computer science at Epitech (European Institute of Technology) Paris.
+          </p>
+          <div id="ctaButtons" class='animated flex flex-wrap gap-4 justify-center mt-5'>
+            <a href='/resume/maxence-marques-pierre-resume.pdf' download class='py-2 px-4 rounded truncate text-xs md:text-sm lg:text-base bg-black dark:bg-white text-white dark:text-black hover:opacity-75 blend'>
+              Download my resume
+            </a>
+            <a href='/work' class='py-2 px-4 truncate rounded text-xs md:text-sm lg:text-base border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend'>
+              View my work experience
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="relative bg-white dark:bg-black">
+    <div class="mx-auto max-w-screen-sm p-5 space-y-24 pb-16">
+
+      <!-- About Section -->
+      <section class="animate">
+        <article>
+          <p>I am a dedicated and ambitious Master's student in <b><i>Computer Science</i></b> at Epitech (European Institute of Technology) in Paris, and I will soon be <b><i>graduating in September</i></b>. Throughout my academic journey at Epitech, enriched by multiple internships, I have honed my skills in programming, software development, and project management. With over five years of coding experience, I have mastered various programming languages. Additionally, I had the opportunity to spend a year studying in New York, where I deepened my knowledge in Fintech.</p>
+
+          <p>During my Master's program, I led an international team of 10 people for my EIP (Epitech Innovative Project) project, which greatly enhanced my leadership and teamwork skills. I am eager to join a company in a dynamic market where digitalization drives business performance.</p>
+
+          <p>Currently, as I conclude my studies, I am working as a freelance software engineer to fulfill my six-month end-of-study internship. I am organized, autonomous, detail-oriented, and more determined than ever to apply my expertise in a professional environment. With my Master's degree in hand this September, <b><i>I am actively seeking an opportunity as a software engineer in Miami starting late September or early October.</i></b></p>
+        </article>
+      </section>
+
+      <!-- Tech Stack Section -->
+      <section class="animate">
+        <div class="space-y-4">
+          <p class="font-semibold text-black dark:text-white">
+            Skills
+          </p>
+          <div class="flex flex-wrap items-center gap-2 mt-5">
+            {stack.map(item => (
+              <StackCard 
+                text={item.text}
+                icon={item.icon}
+                href={item.href}
+                isActive={item.isActive}
+              />
+            ))}
+          </div>
+        </div>
+
+        <div class="space-y-4 mt-5">
+          <p class="font-semibold text-black dark:text-white">
+            Languages
+          </p>
+          <div class="flex flex-wrap items-center gap-2 mt-5">
+            {languages.map(item => (
+              <StackCard 
+                text={item.text}
+                icon={item.icon}
+                href={item.href}
+                isActive={item.isActive}
+              />
+            ))}
+          </div>
+        </div>
+
+        <div class="space-y-4 mt-5">
+          <p class="font-semibold text-black dark:text-white">
+            Hobbies
+          </p>
+          <div class="flex flex-wrap items-center gap-2 mt-5">
+            {hobbies.map(item => (
+              <StackCard 
+                text={item.text}
+                icon={item.icon}
+                href={item.href}
+                isActive={item.isActive}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Preview Section -->
+      <section class="animate">
+        <div class="space-y-4">
+          <div class="flex justify-between">
+            <p class="font-semibold text-black dark:text-white">
+              Recent projects
+            </p>
+            <a href="/projects" class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
+              <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
+                All projects
+              </span>
+            </a>
+          </div>
+          <ul class="space-y-4">
+            {projects.map((project) => (
+              <li>
+                <ArrowCard entry={project} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="animate">
+        <div>
+          <p class="font-semibold text-black dark:text-white">
+            Let's Connect
+          </p>
+          <p>
+            Reach out to me via email or on social media.
+          </p>
+          <div class="grid grid-cols-4 gap-y-2 mt-4 auto-cols-min">
+            {SOCIALS.map(social => (
+              <div class="col-span-1 flex items-center gap-1">
+                <span class="whitespace-nowrap truncate">
+                  {social.NAME}
+                </span>
+              </div>
+              <div class="col-span-3 truncate">
+                <a href={social.HREF} target="_blank" class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
+                  <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
+                    {social.TEXT}
+                  </span>
+                </a>
+              </div>
+            ))}
+        </div>
+      </section>
+    </div>
+  </div>
+</PageLayout>
