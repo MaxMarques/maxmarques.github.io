@@ -1,5 +1,5 @@
 ---
-company: "THE NEW SCHOOL CENTER FOR MEDIA - New York, United States"
+company: "THE NEW SCHOOL CENTER FOR MEDIA - New York City, United States"
 role: "Certificate in Technology Challenges in the Financial Industry"
 dateStart: "09/01/2022"
 dateEnd: "07/31/2023"
