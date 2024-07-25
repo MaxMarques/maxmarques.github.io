@@ -1,5 +1,5 @@
 ---
-company: "PriceWaterhouseCoopers - Luxembourg, Luxembourg"
+company: "PriceWaterhouseCoopers - Luxembourg City, Luxembourg"
 role: "Business Intelligence Team Support (Internship full-time - On-site/Remote)"
 dateStart: "07/01/2020"
 dateEnd: "12/31/2020"
