@@ -56,7 +56,7 @@ tags: [
   },
   { 
     text: "Angular", 
-    icon: "angular-original.svg", 
+    icon: "angular.png", 
     href: "https://angular.dev",
     isActive: true
   },

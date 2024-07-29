@@ -1,5 +1,5 @@
 ---
-company: "ALERION - Nancy, France"
+company: "Alerion - Nancy, France"
 role: "Software Engineer (Internship full-time - On-site)"
 dateStart: "04/01/2022"
 dateEnd: "07/31/2022"

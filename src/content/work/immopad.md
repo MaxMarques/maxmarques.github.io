@@ -1,5 +1,5 @@
 ---
-company: "Air-loc (Immopad) - Metz, France"
+company: "Immopad - Metz, France"
 role: "Freelance Full-stack Developer (Internship full-time - Remote)"
 dateStart: "03/01/2024"
 dateEnd: "08/31/2024"
@@ -8,7 +8,7 @@ url: "https://immopad.com"
 tags: [
   { 
     text: "Angular", 
-    icon: "angular-original.svg", 
+    icon: "angular.png", 
     href: "https://angular.dev",
     isActive: true
   },
