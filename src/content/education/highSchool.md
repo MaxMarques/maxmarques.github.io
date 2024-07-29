@@ -6,12 +6,12 @@ dateEnd: "07/31/2019"
 logo: "highschool.png"
 url: "https://sites.ac-nancy-metz.fr/lyc-loritz/"
 tags: [
-  {
-    text: "Python", 
-    icon: "python-original.svg",
-    href: "https://www.python.org/about",
+  { 
+    text: "Arduino", 
+    icon: "arduino.png", 
+    href: "https://www.arduino.cc",
     isActive: true
-  }
+  },
 ]
 ---
 
