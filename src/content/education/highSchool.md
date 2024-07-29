@@ -15,4 +15,4 @@ tags: [
 ]
 ---
 
-
+In high school, I earned a scientific baccalaureate focusing on engineering sciences, where I learned the basics of mechanical and electrical engineering. As part of this curriculum, I completed a project titled "Automatic Gear Shifting for a Bicycle." This project, which involved developing an automatic and semi-automatic bike derailleur using Arduino, was a true revelation for me and guided me toward the field of computer science.
