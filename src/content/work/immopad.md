@@ -23,4 +23,4 @@ tags: [
 
 ImmoPad is a digital application for creating real estate documents, offering secure and simple solutions for over 1,500 clients and 6,000 users. It optimizes and simplifies the management of property condition reports, appraisals, and work progress tracking.
 
-As part of my final internship, I chose to undertake this internship as a self-employed individual and signed a 6-month contract with the company Air-loc (ImmoPad). My role is to develop and improve their KeyToCheck tools, a solution dedicated to managing travelers' arrivals and departures as well as conducting property condition reports for short-term rentals.
+As part of my final internship, I chose to undertake it as a self-employed individual and signed a 6-month contract with the company Air-loc (ImmoPad). My role was to develop and improve their KeyToCheck tools, a solution dedicated to managing travelers’ arrivals and departures as well as conducting property condition reports for short-term rentals.
