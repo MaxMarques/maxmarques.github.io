@@ -2,7 +2,7 @@
 company: "Mydomus - Nancy, France"
 role: "Front-End Developer (Internship part-time: 2 days at the company per week - On-site/Remote)"
 dateStart: "09/01/2021"
-dateEnd: "04/31/2022"
+dateEnd: "03/31/2022"
 logo: "mydomus.png"
 url: "https://www.mydomus.co/notre-concept"
 tags: [
