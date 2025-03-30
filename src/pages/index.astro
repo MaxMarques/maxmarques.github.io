@@ -103,6 +103,12 @@ const stack = [
     href: "https://react.dev",
     isActive: true
   },
+  { 
+    text: "Next.js", 
+    icon: "nextjs.png", 
+    href: "https://nextjs.org",
+    isActive: true
+  },
   {
     text: "Astro", 
     icon: "astro.png", 
@@ -113,6 +119,30 @@ const stack = [
     text: "NodeJS", 
     icon: "nodejs-original.svg", 
     href: "https://nodejs.org",
+    isActive: true
+  },
+  { 
+    text: "Vercel", 
+    icon: "vercel.png", 
+    href: "https://vercel.com/home",
+    isActive: true
+  },
+  { 
+    text: "AWS Cloud Formation", 
+    icon: "aws.png", 
+    href: "https://aws.amazon.com/cloudformation/",
+    isActive: true
+  },
+  { 
+    text: "SalesForce", 
+    icon: "salesforce.png", 
+    href: "https://www.salesforce.com",
+    isActive: true
+  },
+  { 
+    text: "LeadTrac",
+    icon: "leadtrac.png", 
+    href: "https://www.ndssite.com",
     isActive: true
   },
   { 
@@ -158,6 +188,12 @@ const stack = [
     isActive: true
   },
   { 
+    text: "Nifty", 
+    icon: "nifty.png", 
+    href: "https://niftypm.com/",
+    isActive: true
+  },
+  { 
     text: "MacOS", 
     icon: "macOS.png", 
     href: "",
@@ -181,33 +217,6 @@ const languages = [
   { 
     text: "French (native)", 
     icon: "france.png", 
-    href: "",
-    isActive: false
-  }
-]
-
-const hobbies = [
-  { 
-    text: "Travel", 
-    icon: "travel.png", 
-    href: "",
-    isActive: false
-  },
-  { 
-    text: "Motorsport", 
-    icon: "f1.png", 
-    href: "",
-    isActive: false
-  },
-  { 
-    text: "Guitar", 
-    icon: "guitar.png", 
-    href: "",
-    isActive: false
-  },
-  { 
-    text: "Cooking", 
-    icon: "cooking.png", 
     href: "",
     isActive: false
   }
@@ -259,7 +268,7 @@ const hobbies = [
             Software Engineer
           </p>
           <p class='animated text-sm md:text-base lg:text-lg opacity-75'>
-            Master's Graduate in Computer Science & Programming from Epitech in Paris, France | Actively Seeking Software Engineering / Development Opportunities.
+            Master's Graduate in Computer Science & Programming | Actively Seeking Software Engineering Opportunities.
           </p>
           <div id="ctaButtons" class='animated flex flex-wrap gap-4 justify-center mt-5'>
             <a href='/resume/maxence_marques-pierre_resume.pdf' download class='py-2 px-4 rounded truncate text-xs md:text-sm lg:text-base bg-black dark:bg-white text-white dark:text-black hover:opacity-75 blend'>
@@ -280,11 +289,11 @@ const hobbies = [
       <!-- About Section -->
       <section class="animate">
         <article>
-          <p>I am a dedicated and ambitious <b>graduate with a Master's degree in Computer Science & Programming</b> from Epitech (European Institute of Technology) in Paris, France. Throughout my academic journey at Epitech, enriched by multiple internships, I have perfected my skills in <b>programming, software development, and project management</b>. Having over five years of coding experience, I have mastered various programming languages. Additionally, I had the opportunity to spend a year studying in New York City, where I deepened my knowledge in Fintech.</p>
+          <p>I am a <b>results-driven Software Engineer</b> and <b>Product Manager</b> with a <b>Master's degree</b> in <b>Computer Science</b> from Epitech (European Institute of Technology) in Paris, France, and <b>international experience</b> in both Europe and the U.S. After completing a year of study in <b>New York</b> specializing in <b>Fintech</b> and <b>leading a team</b> of 10 in my Epitech Innovative Project, I joined <b>Debt Consultants Group</b> in October 2024 as their <b>first and sole software engineer</b>.</p>
 
-          <p>During my Master's program, I led an international team of 10 people for my EIP (Epitech Innovative Project), which greatly enhanced my <b>leadership and teamwork skills</b>. I am eager to join a company in a dynamic market where digitalization drives business performance.</p>
+          <p>In this role, I have <b>independently imagined, designed, and built</b> six impactful <b>end-to-end solutions</b> from a fully integrated <b>onboarding portal</b> with <b>admin dashboards</b> (leveraging <b>Next.js, Node.js, AWS SAM, DynamoDB</b>, and <b>Salesforce integration</b>), to <b>AI-augmented web scrapers</b> and <b>automation tools</b> that have directly <b>generated leads</b>, <b>streamlined operations</b>, and <b>saved hundreds of work hours</b> across departments. I introduced <b>structured development processes</b> using <b>GitHub</b> and <b>best coding practices</b>, becoming a <b>central force</b> behind the company’s <b>digital transformation</b>.</p>
 
-          <p>I recently completed my six-month end-of-study internship as a freelance software engineer, and am <b>actively seeking my first full-time position as a software engineer / developer in Miami, FL</b>. I am <b>organized, autonomous, detail-oriented, and more determined than ever to apply my expertise in a professional environment</b>. I am excited about the opportunities that lie ahead and look forward to contributing to a future-oriented team.</p>
+          <p>I thrive in <b>fast-paced environments</b> where I can blend <b>technical innovation</b> with <b>business strategy</b>, always focusing on <b>performance</b>, <b>automation</b>, and <b>growth</b>.</p>
         </article>
       </section>
 
@@ -312,22 +321,6 @@ const hobbies = [
           </p>
           <div class="flex flex-wrap items-center gap-2 mt-5">
             {languages.map(item => (
-              <StackCard 
-                text={item.text}
-                icon={item.icon}
-                href={item.href}
-                isActive={item.isActive}
-              />
-            ))}
-          </div>
-        </div>
-
-        <div class="space-y-4 mt-5">
-          <p class="font-semibold text-black dark:text-white">
-            Hobbies
-          </p>
-          <div class="flex flex-wrap items-center gap-2 mt-5">
-            {hobbies.map(item => (
               <StackCard 
                 text={item.text}
                 icon={item.icon}
@@ -390,4 +383,132 @@ const hobbies = [
       </section>
     </div>
   </div>
+
+  <section class="animate relative w-full bg-transparent">
+    <div class="mx-auto max-w-screen-xl">
+      <div id="solar-system-container" class="w-full h-[800px] bg-transparent"></div>
+    </div>
+  </section>
+
+  <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('solar-system-container');
+
+      const scene = new THREE.Scene();
+      scene.background = null;
+      
+      const camera = new THREE.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 0.1, 1000);
+      camera.position.z = 40;
+      camera.position.y = 15;
+      camera.lookAt(0, 0, 0);
+      
+      const renderer = new THREE.WebGLRenderer({ 
+        antialias: true,
+        alpha: true
+      });
+      renderer.setClearColor(0x000000, 0); // Fully transparent
+      renderer.setSize(container.clientWidth, container.clientHeight);
+      container.appendChild(renderer.domElement);
+      
+      const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+      scene.add(ambientLight);
+      
+      const sunLight = new THREE.PointLight(0xffffff, 1, 100);
+      sunLight.position.set(0, 0, 0);
+      scene.add(sunLight);
+      
+      const textureLoader = new THREE.TextureLoader();
+      
+      const sunGeometry = new THREE.SphereGeometry(3, 32, 32);
+      const sunTexture = textureLoader.load(`textures/sun.jpg`);
+      const sunMaterial = new THREE.MeshBasicMaterial({ map: sunTexture });
+      const sun = new THREE.Mesh(sunGeometry, sunMaterial);
+      scene.add(sun);
+
+      const planets = [
+        { name: 'Mercury', size: 0.4, distance: 6, texture: 'mercury.jpg', speed: 0.02, inclination: 7.0 },
+        { name: 'Venus', size: 0.7, distance: 9, texture: 'venus.jpg', speed: 0.015, inclination: 3.4 },
+        { name: 'Earth', size: 0.8, distance: 13, texture: 'earth.jpg', speed: 0.01, inclination: 0.0 },
+        { name: 'Mars', size: 0.6, distance: 16, texture: 'mars.jpg', speed: 0.008, inclination: 1.9 },
+        { name: 'Jupiter', size: 1.5, distance: 22, texture: 'jupiter.jpg', speed: 0.005, inclination: 1.3 },
+        { name: 'Saturn', size: 1.2, distance: 28, texture: 'saturn.jpg', speed: 0.003, inclination: 2.5 }
+      ];
+      
+      const planetMeshes = planets.map(planet => {
+        const geometry = new THREE.SphereGeometry(planet.size, 32, 32);
+        const texture = textureLoader.load(`textures/${planet.texture}`);
+        const material = new THREE.MeshStandardMaterial({ map: texture });
+        const mesh = new THREE.Mesh(geometry, material);
+        const orbitGroup = new THREE.Group();
+        orbitGroup.rotation.x = THREE.MathUtils.degToRad(planet.inclination);
+        orbitGroup.add(mesh);
+        
+        mesh.position.x = planet.distance;
+        
+        scene.add(orbitGroup);
+        
+        if (planet.name === 'Earth') {
+          const moonGeometry = new THREE.SphereGeometry(0.2, 32, 32);
+          const moonTexture = textureLoader.load(`textures/moon.jpg`);
+          const moonMaterial = new THREE.MeshStandardMaterial({ map: moonTexture });
+          const moon = new THREE.Mesh(moonGeometry, moonMaterial);
+
+          const moonOrbitGroup = new THREE.Group();
+          moonOrbitGroup.add(moon);
+          moon.position.x = 1.5;
+
+          moonOrbitGroup.position.x = planet.distance;
+
+          orbitGroup.add(moonOrbitGroup);
+
+          return {
+            mesh,
+            orbitGroup,
+            speed: planet.speed,
+            moon,
+            moonOrbitGroup,
+            moonSpeed: 0.04
+          };
+        }
+        
+        return { mesh, orbitGroup, speed: planet.speed };
+      });
+      
+      function animate() {
+        requestAnimationFrame(animate);
+        
+        sun.rotation.y += 0.005;
+        
+        planetMeshes.forEach(planet => {
+          if (planet.moonOrbitGroup) {
+            planet.orbitGroup.rotation.y += planet.speed;
+            planet.mesh.rotation.y += planet.speed * 0.5;
+            
+            // Moon orbit and rotation
+            planet.moonOrbitGroup.rotation.y += planet.moonSpeed;
+            planet.moon.rotation.y += planet.moonSpeed * 0.5;
+          } else {
+            // Regular planets
+            planet.orbitGroup.rotation.y += planet.speed;
+            planet.mesh.rotation.y += planet.speed * 0.5;
+          }
+        });
+        
+        renderer.render(scene, camera);
+      }
+      
+      animate();
+      
+      window.addEventListener('resize', () => {
+        const newWidth = container.clientWidth;
+        const newHeight = container.clientHeight;
+        
+        camera.aspect = newWidth / newHeight;
+        camera.updateProjectionMatrix();
+        
+        renderer.setSize(newWidth, newHeight);
+      });
+    });
+  </script>
 </PageLayout>

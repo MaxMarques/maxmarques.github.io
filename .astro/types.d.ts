@@ -143,6 +143,13 @@ declare module 'astro:content' {
   collection: "education";
   data: InferEntrySchema<"education">
 } & { render(): Render[".md"] };
+"highSchool.md": {
+	id: "highSchool.md";
+  slug: "highschool";
+  body: string;
+  collection: "education";
+  data: InferEntrySchema<"education">
+} & { render(): Render[".md"] };
 "master.md": {
 	id: "master.md";
   slug: "master";
@@ -298,6 +305,13 @@ declare module 'astro:content' {
 "alerion.md": {
 	id: "alerion.md";
   slug: "alerion";
+  body: string;
+  collection: "work";
+  data: InferEntrySchema<"work">
+} & { render(): Render[".md"] };
+"dcg.md": {
+	id: "dcg.md";
+  slug: "dcg";
   body: string;
   collection: "work";
   data: InferEntrySchema<"work">
