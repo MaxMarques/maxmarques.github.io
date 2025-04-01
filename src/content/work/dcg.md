@@ -19,6 +19,12 @@ tags: [
     isActive: true
   },
   { 
+    text: "NodeJS", 
+    icon: "nodejs-original.svg", 
+    href: "https://nodejs.org",
+    isActive: true
+  },
+  { 
     text: "Vercel", 
     icon: "vercel.png", 
     href: "https://vercel.com/home",
