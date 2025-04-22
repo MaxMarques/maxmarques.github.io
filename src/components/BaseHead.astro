@@ -67,3 +67,12 @@ const { title, description, image = "/open-graph.jpg" } = Astro.props
     ].forEach((link) => link.remove())
   )
 </script>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E5RLKD5Q7Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-E5RLKD5Q7Q');
+</script>
