@@ -117,6 +117,5 @@ tags: [
 ]
 ---
 
-Epitech is a renowned computer science school in France, recognized for its innovative and practice-oriented pedagogy. The teaching method is based on practical projects, promoting learning through experimentation and solving real-world problems.
-
-During my bachelor's studies at Epitech, I acquired a solid foundation in programming and computer design through numerous projects. These experiences also allowed me to develop valuable skills in teamwork and project management, as the majority of the projects were group-based. Additionally, I enhanced my professional experience with three substantial six-month internships, which provided me with the opportunity to explore and discover various fields of activity.
+Epitech is a leading French computer science school built entirely on project-based learning, where you learn by building rather than through traditional lectures.
+Over three years I built a solid foundation in programming and software design through dozens of hands-on projects, most of them team-based, which sharpened my skills in collaboration and project management. I also completed three six-month internships that let me explore very different fields, from healthcare to autonomous robotics.

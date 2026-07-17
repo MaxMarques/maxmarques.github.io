@@ -75,4 +75,4 @@ tags: [
 ]
 ---
 
-I had the opportunity to study abroad for one year at a partner school as part of my first year of master's studies. I chose to enroll in a Fin-tech program in New York City. During this year, I was able to improve my English, explore a new culture, study fundamentals of finance, learn to use the R language for data representation, and understand how to leverage vast amounts of real-time data for trading logic.
+I completed a year of my Master's in New York City, enrolled in a fintech program focused on the technology challenges facing the financial industry. I studied the fundamentals of finance, learned to use the R language for data representation, and explored how to leverage large volumes of real-time data for trading logic.

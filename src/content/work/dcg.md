@@ -2,7 +2,7 @@
 company: "Debt Consultants Group - Miami, Florida"
 role: "Software Engineer & Product Manager (Full-time - On-site)"
 dateStart: "10/01/2024"
-dateEnd: "Present"
+dateEnd: "09/01/2025"
 logo: "dcg.jpeg"
 url: "https://debtconsultantsgroup.com"
 tags: [
@@ -69,34 +69,12 @@ tags: [
 ]
 ---
 
-As the sole software engineer, I spearheaded innovative technological solutions to drive business growth and operational efficiency, developing six key projects that transformed lead generation and internal processes.
+I independently designed and built six end-to-end solutions that transformed the company's lead generation and internal operations, working alongside the Salesforce CRM team.
 
-Key Achievements:
+- <b>Lead Management Portal.</b> Built a full web application in Next.js and Vercel for end-to-end lead qualification, integrated with Salesforce and LeadTrac, with a multi-tier admin portal (sales reps, underwriters, super admins) and encrypted authentication.
 
-<b>Lead Management Portal Development</b>
+- <b>Lead-Generation Scrapers (Python).</b> Built an AI-powered Reddit scraper that surfaced qualified prospects from business-debt conversations, a Yellow Pages scraper that extracted over one million business contacts for targeted marketing, and a courthouse-record scraper automating lead identification across New York, Florida, and California.
 
-- Designed and implemented a comprehensive web application using Next.js and Vercel, creating an end-to-end lead qualification system
-- Integrated seamlessly with Salesforce and LeadTrac to streamline lead management
-- Developed a multi-tier admin portal with distinct access levels for sales representatives, underwriters, and super administrators
-- Implemented robust security measures including encrypted authentication tokens
+- <b>Reporting Automation.</b> Built a Python system that automated daily reporting, eliminating four hours of manual work per day.
 
-<b>Advanced Lead Generation Technologies</b>
-
-Created sophisticated web scraping solutions using Python to identify potential business leads:
-
-- Reddit Scraper: Developed an AI-powered tool to analyze business debt-related posts, generating 2+ qualified leads monthly
-- Yellow Pages Scraper: Extracted over 1 million potential business contact details to support targeted marketing efforts
-- Courthouse Record Scraper: Automated lead identification across New York, Florida, and California markets
-
-<b>Business Process Automation</b>
-
-- Built a Python application to automate daily reporting, eliminating 4 hours of manual work daily
-- Implemented data-driven solutions to optimize lead generation and business intelligence processes
-
-<b>Technical Infrastructure</b>
-
-- Architected cloud infrastructure using AWS, developing over 30 Lambda functions and S3 document management
-- Utilized Sam CLI for cloud formation and created a sandbox environment for testing and feature development
-- Managed entire software development lifecycle independently, from concept to production
-
-Throughout my tenure, I consistently demonstrated the ability to conceptualize, design, and implement transformative technological solutions that directly contribute to business growth and operational efficiency.
+- <b>Cloud Infrastructure.</b> Architected the AWS backend with 30+ Lambda functions and S3 document management, using AWS SAM for CloudFormation and a dedicated sandbox environment, owning the full development lifecycle from concept to production.

@@ -51,8 +51,5 @@ tags: [
 ]
 ---
 
-During my second year of the Master's program, I presented my project Vakary, which I developed over three years as part of the EIP (Epitech Innovative Project). This project allowed me to work in a start-up-like environment, aiming to create a functional beta version that addresses a specific need.
-
-Through this project, I had the opportunity to lead a project from start to finish, pitch it to investors, and manage a team of ten people across different time zones, all while meeting deadlines. This experience helped me develop skills in project management, leadership, and communication.
-
-Additionally, I completed two six-month internships, one of which was as a freelancer, allowing me to experience self-employment.
+During my Master's, I built Vakary, my Epitech Innovative Project (EIP), which I developed over three years in a start-up-like environment to deliver a functional beta addressing a specific market need.
+I led the project from start to finish: I pitched it to investors and managed a team of ten people across different time zones, all while meeting every deadline. It's where I learned to own a product end to end, from the technical build to the leadership around it.

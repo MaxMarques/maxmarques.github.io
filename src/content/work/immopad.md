@@ -1,6 +1,6 @@
 ---
 company: "Immopad - Metz, France"
-role: "Freelance Full-stack Developer (Internship full-time - Remote)"
+role: "Freelance Full-stack Developer (Full-time - Remote)"
 dateStart: "03/01/2024"
 dateEnd: "08/31/2024"
 logo: "immopad.png"
@@ -21,6 +21,4 @@ tags: [
 ]
 ---
 
-ImmoPad is a digital application for creating real estate documents, offering secure and simple solutions for over 1,500 clients and 6,000 users. It optimizes and simplifies the management of property condition reports, appraisals, and work progress tracking.
-
-As part of my final internship, I chose to undertake it as a self-employed individual and signed a 6-month contract with the company Air-loc (ImmoPad). My role was to develop and improve their KeyToCheck tools, a solution dedicated to managing travelers’ arrivals and departures as well as conducting property condition reports for short-term rentals.
+Engaged as an independent contractor by Air-loc (ImmoPad) on a six-month agreement. I developed and extended KeyToCheck, their tool for managing traveler arrivals and departures and property condition reports for short-term rentals. Worked in Angular on a real-estate documentation platform serving over 1,500 clients and 6,000 users.

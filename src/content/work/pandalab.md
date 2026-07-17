@@ -21,4 +21,4 @@ tags: [
 ]
 ---
 
-Pandalab is a platform dedicated to the healthcare sector, promoting coordination and communication among healthcare professionals, healthcare organizations, and patients. My role within the company was to enhance and expand the functionalities of the Vue.js-based web application. My responsibilities included adding new features, such as advanced statistics, and modifying pages to optimize the user experience.
+Extended a Vue.js healthcare platform used to coordinate communication between practitioners, healthcare organizations, and patients. Built new features including an advanced statistics module, and reworked existing pages to improve the user experience.

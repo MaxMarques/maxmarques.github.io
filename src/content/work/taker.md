@@ -7,11 +7,4 @@ logo: "taker.png"
 url: "https://juniortaker.com"
 ---
 
-TAKER is an associative structure that brings together the top Epitech students in France and offers companies the opportunity to develop their IT projects:
-
-- Prospecting new clients.
-- Development of specifications.
-- Project management and liaison between technical teams and the client.
-- Customer relationship management.
-
-My role within TAKER was to prospect companies in order to sign contracts for the realization of IT projects.
+Managed IT projects for external clients at TAKER, the consultancy bringing together top Epitech students in France. Prospected and signed new client contracts, wrote technical specifications, managed customer relationships, and served as the link between the development team and the client through delivery.

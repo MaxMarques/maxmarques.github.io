@@ -45,8 +45,6 @@ tags: [
 ]
 ---
 
-ALERION is a consultancy specializing in autonomous robotics, providing innovative solutions for drone design and sensor data analysis to drive digital transformation in businesses, I had the opportunity to work on these two subjects within the company:
+- Programmed a Boston Dynamics Spot robot in Python to detect door handles and open them autonomously, enabling emergency services to deploy it into gas and chemical leak sites without sending anyone in. Built the computer-vision pipeline with YOLOv5 and OpenCV, handling image annotation and processing.
 
-- I completed a project using React.js, which involved displaying a real-time digital terrain model within a web application. I overlaid this model on a 2D base map, allowing for precise geospatial data localization. Furthermore, I expanded this visualization by offering a 3D representation of the same model within a web platform.
-
-- I programmed a Boston Dynamics Spot robot using Python for the recognition of door handles and the management of their automatic opening using artificial intelligence. This project was designed in the context of emergency services, where the robot can be deployed in case of a gas or chemical leak, reducing the need for human intervention. My role involved using the Boston Dynamics Spot robot to detect door handles, open them, and enter a room automatically. I worked with tools such as YoloV5, which incorporates ready-to-use artificial intelligence, openCV for image modification for annotation, and the Spot robot itself.
+- Developed a React application that rendered a real-time digital terrain model over a 2D base map for precise geospatial localization, then extended it into a 3D web visualization.

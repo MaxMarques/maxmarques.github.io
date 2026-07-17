@@ -135,36 +135,14 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		"education": {
-"bachelor.md": {
-	id: "bachelor.md";
-  slug: "bachelor";
+		"education": Record<string, {
+  id: string;
+  slug: string;
   body: string;
   collection: "education";
-  data: InferEntrySchema<"education">
-} & { render(): Render[".md"] };
-"highSchool.md": {
-	id: "highSchool.md";
-  slug: "highschool";
-  body: string;
-  collection: "education";
-  data: InferEntrySchema<"education">
-} & { render(): Render[".md"] };
-"master.md": {
-	id: "master.md";
-  slug: "master";
-  body: string;
-  collection: "education";
-  data: InferEntrySchema<"education">
-} & { render(): Render[".md"] };
-"nyc.md": {
-	id: "nyc.md";
-  slug: "nyc";
-  body: string;
-  collection: "education";
-  data: InferEntrySchema<"education">
-} & { render(): Render[".md"] };
-};
+  data: InferEntrySchema<"education">;
+  render(): Render[".md"];
+}>;
 "legal": Record<string, {
   id: string;
   slug: string;

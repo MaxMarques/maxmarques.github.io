@@ -15,10 +15,10 @@ tags: [
 ]
 ---
 
-Mydomus revolutionizes real estate with innovative digital solutions to streamline renting and automate administrative processes, I had the opportunity to work on these three subjects within the company:
+Built front-end features in Angular for a real-estate rental platform:
 
-- I created a feature enabling users to view their account login history across any device, aimed at enhancing their security.
+- A cross-device account login-history view to strengthen user security.
 
-- I developed a feature for creating real estate listings. The form includes all property details such as price, photos, charges, deposit, number of rooms, energy class, and availability date, with the option to publish the listing on platforms like Le Bon Coin (Craigslist), Se Loger (Zillow), ParuVendu (OfferUp), and Facebook.
+- A listing-creation flow capturing full property details, with simultaneous publishing to Le Bon Coin, SeLoger, ParuVendu, and Facebook.
 
-- I implemented a feature to create a rental application linked to 'Dossier Facile' (a platform that simplifies and manages rental applications online). This allows users to track their application status from their Mydomus account and automatically send it to the landlord after validation by 'Dossier Facile'.
+- A rental-application feature integrated with Dossier Facile, letting tenants track their application and have it sent to landlords automatically once validated.
